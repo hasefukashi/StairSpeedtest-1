@@ -433,15 +433,15 @@ std::string exportRender(std::string resultpath, std::vector<nodeInfo> &nodes, b
         total_width += nattype_width;
 
     //generating information
-    std::string gentime = "Generated at " + getTime(3) + " by CM.在线测速";
+    std::string gentime = "Generated at " + getTime(3) + " By SpeedtestGo";
     std::string traffic = "Traffic used : " + speedCalc((double)total_traffic) + ". ";
-    std::string about = "By Stair Speedtest Reborn " VERSION ".";
-    std::string title = "  Stair Speedtest Reborn Result Table ( " VERSION " )  ";
+    std::string about = "By SpeedtestGo " VERSION ".";
+    std::string title = "  SpeedtestGo Result Table ( " VERSION " )  ";
     //SSRSpeed style
     if(export_as_ssrspeed)
     {
         traffic += "Time used: " + secondToString(test_duration) + ". Online Node(s) : [" + std::to_string(onlines) + "/" + std::to_string(node_count) + "]";
-        title = "  SSRSpeed Result Table ( v2.7.2 )  ";
+        title = "  SpeedtestGo Result Table ( v2.7.2 )  ";
     }
     else
     {
